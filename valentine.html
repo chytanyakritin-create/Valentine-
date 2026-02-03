@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine 💖</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    background: linear-gradient(#ffd1dc, #ffb6c1);
+}
+
+.page {
+    display: none;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.active {
+    display: block;
+}
+
+h1 {
+    color: #d63384;
+    font-size: 36px;
+}
+
+p {
+    font-size: 20px;
+    color: #7a003c;
+    max-width: 800px;
+    margin: auto;
+}
+
+img {
+    width: 300px;
+    max-width: 90%;
+    margin: 25px;
+}
+
+button {
+    padding: 14px 35px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    margin: 15px;
+    cursor: pointer;
+    background: #ff69b4;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div class="page active" id="page1">
+    <h1>Tani baby will u be my Valentine 💕</h1>
+    <img src="flowers.png" alt="boy holding flowers">
+    <br>
+    <button onclick="yesPage()">Yes 💖</button>
+    <button onclick="noPage()">No 😶</button>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page" id="page2">
+    <h1>😡 Choose wisely 😡</h1>
+    <img src="chase.png" alt="boy chasing girl">
+    <br>
+    <button onclick="back()">Choose Again 🔄</button>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page" id="page3" style="background: linear-gradient(#ffb6c1,#ff69b4);">
+    <h1>💖 Happy Valentine’s Day 💖</h1>
+
+    <img src="love.png" alt="lovey couple holding hands">
+
+    <p>
+        You have choosen to be my valentine again and thank you for being my valentine.
+        Get ready for all the troubles am gonna put u though forever and love you more
+        than anyone with lot of love and lot of irritation as your bf (bonus just for u 😏).
+        <br><br>
+        Happy valentines day Tani baby ❤️  
+        <br>
+        Muahhh 😘
+    </p>
+</div>
+
+<script>
+function noPage() {
+    page1.classList.remove("active");
+    page2.classList.add("active");
+}
+
+function back() {
+    page2.classList.remove("active");
+    page1.classList.add("active");
+}
+
+function yesPage() {
+    page1.classList.remove("active");
+    page3.classList.add("active");
+}
+</script>
+
+</body>
+</html>
